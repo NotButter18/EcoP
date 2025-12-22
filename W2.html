@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOLOGY_OS // WEEK_02</title>
+    <link rel="stylesheet" href="terminal2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"></head>
+<body>
+    <video autoplay muted loop id="background">
+        <source src="images/bg.mp4" type="video/mp4">
+    </video>
+    <audio src="images/Swagaholic.mp3" loop id="music"></audio>    
+    <div class="page-transition">
+        <div class="terminal-container">
+            <div class="scanline-bar"></div>
+
+            <header>
+                <div class="system-meta">
+                    <span class="status-blink">●</span> SYSTEM_LOG: WEEK_02
+                    <span class="divider">|</span> 
+                    STATUS: DATA_ARCHIVE
+                </div>
+                <a href="index.html" class="home-btn">[ RETURN_HOME ]</a>
+            </header>
+
+            <main class="grid-wrapper">
+                <section class="visual-box">
+                    <img src="images/D9.jpg" alt="Week Progress" class="plant-photo">
+                    <div class="overlay-text">SUBJECT: CORN_WEEK2</div>
+                </section>
+
+                <section class="visual-box">
+                        <div id="corn-container"></div>
+                </section>
+
+                <section class="stats-box">
+                    <h3>[ DATA_POINTS ]</h3>
+                    <table>
+                        <tr><td>HEIGHT:</td><td>5-8cm</td></tr>
+                        <tr><td>LEAF_COUNT:</td><td>~1</td></tr>
+                        <tr><td>WATER_GIVEN:</td><td>20-30ml/d</td></tr>
+                        <tr><td>LIGHT_EXPOSURE:</td><td>24H</td></tr>
+                    </table>
+                </section>
+
+                <section class="journal-box">
+                    <h3>[ FIELD_JOURNAL ]</h3>
+                    <p>Returning from the weekend, we were pleased to find the first signs of growth. The plant had sprouted significantly over the break, reaching a height of over 5 cm. This steady progress continued throughout the week, and we are now seeing the initial development of its first leaves...</p>
+                </section>
+
+                <section class="gallery-module">
+                    <h3>[ WEEKLY_LOG_GALLERY ]</h3>
+                    <div class="day-grid">
+                <div class="day-card">
+            <span>MON</span>
+            <img src="images/D6.jpg" alt="Day 01" class="gallery-img">
+        </div>
+        <div class="day-card">
+            <span>TUE</span>
+            <img src="images/D7.jpg" alt="Day 02" class="gallery-img">
+        </div>
+        <div class="day-card">
+            <span>WED</span>
+            <img src="images/D8.jpg" alt="Day 03" class="gallery-img">
+        </div>
+        <div class="day-card">
+            <span>THU</span>
+            <img src="images/D9.jpg" alt="Day 04" class="gallery-img">
+        </div>
+                        <div class="day-card"><span>FRI</span><div class="img-placeholder"></div></div>
+                        <div class="day-card"><span>SAT</span><div class="img-placeholder"></div></div>
+                        <div class="day-card"><span>SUN</span><div class="img-placeholder"></div></div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer-bar">
+                ECOLOGY_PROJECT_DATA_RECOVERY_v1.04
+            </footer>
+        </div>
+    </div>
+    <div id="audio-toggle" class="audio-control">
+    SYSTEM_AUDIO: [<span id="status">OFF</span>]
+    </div>
+    <script src="js/W2.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#9E1400">
+    <meta property="og:title" content="Clanker the corn plant journy!">
+    <meta property="og:description" content="Learn about ecology and my plant :)">
+    <meta property="og:image" content="https://ibb.co/v6BdgmRg">
+    <meta property="og:url" content="https://notbutter18.github.io/EcoP/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="welcome to">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecology</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+
+<body> 
+    <div class="crt">
+        <div id="shadowBox"></div>
+        <header class="header">
+            <h1 class="rainbow">
+                Ecology OS 
+            </h1>
+        </header>
+    <video src="images/bg.mp4" id="background" playsinline muted loop autoplay></video>
+    <audio src="images/Swagaholic.mp3" loop id="music"></audio>
+
+    <h2 id="title">Welcome to my ecology project!</h2>
+<br>
+<div class="p1" id="box">
+<p id="aboutme">
+    <span id="subh">On this website we will explore:</span>
+    <br>
+    The seventeen day journey of growing my very own corn plant, challenges and problems we faced, and how this project connects to ecology.
+</p>
+    <div id="corn-container" style="width: 100%; height: 300px; cursor: grab;"></div>
+<small id="aboutme">click and hold to rotate the plant!</small>
+<p id="aboutme">
+    Navigate through the menues bellow to see the many different stages our plant went through
+</p>
+</div>
+<br>
+<footer>
+    <a href="W1.html"><button type="button" class="rainbowbutton" id="week1">Week 1</button></a>
+    <a href="W2.html"><button type="button" class="rainbowbutton" id="week2">Week 2</button></a>
+    <a href="W3.html"><button type="button" class="rainbowbutton" id="week3">Week 3</button></a>
+    
+    <br>
+    <br>
+    <div id="bottombox">
+        <small id="bottomtext">made by nimaan</small>
+    </div>
+</footer>
+<div class="intro" onclick="introclick()">
+        <p class="introp" onclick="introclick()">Click to enter!</p>
+        <h1 class="introtitle">
+            <span>E</span><span>C</span><span>O</span><span>L</span><span>O</span><span>G</span><span>Y</span>
+        </h1>
+</div>
+<div id="audio-toggle" class="audio-control">
+    SYSTEM_AUDIO: [<span id="status">OFF</span>]
+</div>
+    <script src="js/intro.js"></script>
+    <script src="js/cob.js"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>
