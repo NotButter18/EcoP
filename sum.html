@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOLOGY_OS // SUMMARY_REPORT</title>
+    <link rel="stylesheet" href="terminal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <video autoplay muted loop id="background">
+        <source src="images/bg.mp4" type="video/mp4">
+    </video>
+    <audio src="images/Swagaholic.mp3" loop id="music"></audio>
+
+    <div class="page-transition">
+        <div class="terminal-container">
+            <div class="scanline-bar"></div>
+
+            <header>
+                <div class="system-meta">
+                    <span class="status-blink">●</span> SYSTEM_LOG: FINAL_SUMMARY
+                <span class="divider">|</span> 
+                    STATUS: DATA_ARCHIVE
+                </div>
+                <a href="index.html" class="home-btn">[ RETURN_HOME ]</a>
+            </header>
+
+            <main class="grid-wrapper">
+            <section class="visual-box">  
+                <section class="stats-box">
+                    <div class="stats-header">
+                        <h3>[ data_points ]</h3>
+                        <button id="open-modal" class="plus-btn">[ + ]</button>
+                    </div>
+                    <table>
+                        <tr><td>final_height:</td><td>~16cm</td></tr>
+                        <tr><td>survivability:</td><td>1/2 seeds
+                            <br>
+                            survived</td></tr>
+                        <tr><td>plant_health:</td><td>100%</td></tr>
+                    </table>
+                </section>
+
+                <section class="journal-box">
+                    <h3>[ final_field_journal ]</h3>
+                    <p>
+                        This experiment is a perfect way to demonstrate the principles of <strong>ecology</strong> in a controlled ecosystem. 
+                        Over the span of seventeen days, including weekends, we observed the germination and growth of a corn plant, documenting key data points such as height, leaf count, and water intake. 
+                    </p>
+                    <br>
+                    <p>
+                        The use of 24-hour lighting facilitated efficient <strong>photosynthesis</strong>, while the choice of nutrient-rich soil provided essential <strong>minerals</strong> for development. 
+                        The plant's growth trajectory followed a typical <strong>secondary succession</strong> model, starting from a seed and <strong>existing soil</strong> and ending with almost fully grown leaves.
+                    </p>
+                </section>
+                </section>
+                <section class="visual-box">
+                    <img src="images/D14.jpg" alt="final photo" class="plant-photo">
+                    <div class="overlay-text">SUBJECT: CORN_end</div>
+                </section>
+            </main>
+
+            <footer class="footer-bar">
+                ECOLOGY_PROJECT_DATA_RECOVERY_v1.04
+            </footer>
+        </div>
+    </div>
+
+    <div id="data-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times; [close]</span>
+            <h2>// expanded_system_logs</h2>
+            <hr>
+            <br>
+            <p><strong>growth_analysis:</strong> 
+                <br>
+                total height achieved: 16cm. The plant grew a total of 3 leaves by the end of the growth period and is still continuing to grow. In the start we had plant two seeds, though one did not survive.
+            </p>
+            <div class="custom-line"></div>
+            <p><strong>concepts_demonstrated:</strong> 
+                <br>
+                many ecology concepts were demonstrated through this project, such as:
+                <ul>
+                    <li>photosynthesis; plants use carbon dioxide, water and sunlight to make energy.</li>
+                    <li>carbon cycle; carbon is stored in resivoirs and moved by procesess.</li>
+                    <li>food chains; since this plant can create its own energy it is considerd a producer and place of the first trophic level.</li>
+                    <li>succession; the seed started out on existing soil instead of bare rock.</li>
+                </ul>
+            </p>
+            <div class="custom-line"></div>
+            <p><strong>ecosystem_interactions:</strong> 
+                <br>
+                This experiment also demonstartes how the four spheres of earth interact:
+                <ul>
+                    <li>lithosphere; the plant was grown in nutrient rich soil which provided minerals for growth.</li>
+                    <li>atmosphere; the plant used carbon dioxide from the air for photosynthesis.</li>
+                    <li>hydrosphere; water was given to the plant to keep it hydrated and allow for nutrient transport.</li>
+                    <li>biosphere; the plant is a living organism that interacts with its environment to survive and grow.</li>
+                </ul>
+                <div class="custom-line"></div>
+            <p><strong>conclusion:</strong> 
+                <br>
+                In conclusion, this project effectively illustrates key ecological concepts through the controlled growth of a corn plant. 
+                The data collected over the seventeen day period highlights the importance of abiotic factors such as light, water, and soil nutrients in supporting plant life and ecosystem dynamics.
+                We learned how these factors all play a role in allowing the growth and sustainability for life, providing a miniature view of larger ecological processes at work in natural environments.
+            </p>
+            </p>
+        </div>
+    </div>
+
+    <div id="audio-toggle" class="audio-control">
+        SYSTEM_AUDIO: [<span id="status">OFF</span>]
+    </div>
+
+    <script src="js/music.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

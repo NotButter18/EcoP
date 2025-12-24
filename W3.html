@@ -37,18 +37,20 @@
                 </section>
 
                 <section class="stats-box">
-                    <h3>[ DATA_POINTS ]</h3>
-                    <table>
-                        <tr><td>HEIGHT:</td><td>10-16cm</td></tr>
-                        <tr><td>LEAF_COUNT:</td><td>2-3</td></tr>
-                        <tr><td>WATER_GIVEN:</td><td>25ml/D</td></tr>
-                        <tr><td>LIGHT_EXPOSURE:</td><td>24H</td></tr>
-                    </table>
-                </section>
-
+    <div class="stats-header">
+        <h3>[ data_points ]</h3>
+        <button id="open-modal" class="plus-btn">[ + ]</button>
+    </div>
+    <table>
+        <tr><td>height:</td><td>10-15cm</td></tr>
+        <tr><td>leaf_count:</td><td>2-3</td></tr>
+        <tr><td>water_given:</td><td>25ml</td></tr>
+        <tr><td>light_exposure:</td><td>24h</td></tr>
+    </table>
+</section>
                 <section class="journal-box">
                     <h3>[ FIELD_JOURNAL ]</h3>
-                    <p>Returning from the weekend, we were pleased to find the first signs of growth. The plant had sprouted significantly over the break, reaching a height of over 5 cm. This steady progress continued throughout the week, and we are now seeing the initial development of its first leaves...</p>
+                    <p>Our weekend growth projections of 3 to 4 cm proved to be a significant underestimate. The plant surpassed expectations by developing two full leaves over the weekend, followed by a third by the end of the week. As we are unable to continue monitoring the plant at school over the break, we have relocated it home and look forward to seeing this level of progress continue...</p>
                 </section>
 
                 <section class="gallery-module">
@@ -82,6 +84,25 @@
             </footer>
         </div>
     </div>
+<div id="data-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times; [close]</span>
+        <h2>// expanded_system_logs</h2>
+        <hr style="border: 0.5px solid #b75ffa;">
+        <p><strong>growth_analysis:</strong> 
+            <br>
+            When we came back from the weekend the plant had grown 2 full leaves and a 3rd one was also on the way. 
+            The plant had this massive growth spurt thanks to the 24 hour lighting which boosted the process of photosynthesis.</p>
+        <div class="custom-line"></div>
+        <p><strong>abiotic_factors:</strong> 
+            <br>
+            24h lighting to ensure efficiant photosynthesis. plant is placed in dry, room-temprature room. 2 styrofoam cups were used with nutrient rich soil.</p>
+        <div class="custom-line"></div>
+        <p><strong>maintenance_protocol:</strong> 
+            <br>
+            slowly pour water into cup until water begins to drip ot of the hole under it daily. this is approximatly 25ml.</p>
+    </div>
+</div>
     <div id="audio-toggle" class="audio-control">
     SYSTEM_AUDIO: [<span id="status">OFF</span>]
     </div>

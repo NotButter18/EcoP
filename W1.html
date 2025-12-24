@@ -37,19 +37,24 @@
                 </section>
 
                 <section class="stats-box">
-                    <h3>[ DATA_POINTS ]</h3>
-                    <table>
-                        <tr><td>HEIGHT:</td><td>N/A</td></tr>
-                        <tr><td>LEAF_COUNT:</td><td>N/A</td></tr>
-                        <tr><td>WATER_GIVEN:</td><td>30-50ml/d</td></tr>
-                        <tr><td>LIGHT_EXPOSURE:</td><td>24H</td></tr>
-                    </table>
-                </section>
+    <div class="stats-header">
+        <h3>[ data_points ]</h3>
+        <button id="open-modal" class="plus-btn">[ + ]</button>
+    </div>
+    <table>
+        <tr><td>height:</td><td>n/a</td></tr>
+        <tr><td>leaf_count:</td><td>n/a</td></tr>
+        <tr><td>water_given:</td><td>30-50ml</td></tr>
+        <tr><td>light_exposure:</td><td>24h</td></tr>
+    </table>
+</section>
 
-                <section class="journal-box">
-                    <h3>[ FIELD_JOURNAL ]</h3>
-                    <p>The plant didn't show any signs of visible growth this week. We watered it daily with about 30-50ml hoping for the best over the weekend. The day before the weekend, I was worried that we hadn't watered it enough and that it might die, but I was soon proven wrong...</p>
-                </section>
+<section class="journal-box">
+    <h3>[ field_journal ]</h3>
+    <p>
+        The plant didn't show any signs of visible growth this week. We watered it daily with about 30-50ml hoping for the best over the weekend. The day before the weekend, I was worried that we hadn't watered it enough and that it might die, but I was soon proven wrong...
+    </p>
+</section>
 
                 <section class="gallery-module">
                     <h3>[ WEEKLY_LOG_GALLERY ]</h3>
@@ -85,6 +90,25 @@
             </footer>
         </div>
     </div>
+    <div id="data-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times; [close]</span>
+        <h2>// expanded_system_logs</h2>
+        <hr>
+        <br>
+        <p><strong>growth_analysis:</strong> 
+            <br>
+            because we planted the seed this week there is no visible growth to analyze for the time being.</p>
+        <div class="custom-line"></div>
+        <p><strong>abiotic_factors:</strong> 
+            <br>
+            24h lighting ensures efficiant photosynthesis. plant is Placed in dry, room-temprature room. 2 styrofoam cups were used to hold the plant in nutriant rich soil.</p>
+        <div class="custom-line"></div>
+        <p><strong>maintenance_protocol:</strong> 
+            <br>
+            water daily with 30-50ml of water depending on soil moisture level.</p>
+    </div>
+</div>
     <div id="audio-toggle" class="audio-control">
     SYSTEM_AUDIO: [<span id="status">OFF</span>]
     </div>

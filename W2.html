@@ -37,14 +37,17 @@
                 </section>
 
                 <section class="stats-box">
-                    <h3>[ DATA_POINTS ]</h3>
-                    <table>
-                        <tr><td>HEIGHT:</td><td>5-8cm</td></tr>
-                        <tr><td>LEAF_COUNT:</td><td>~1</td></tr>
-                        <tr><td>WATER_GIVEN:</td><td>20-30ml/d</td></tr>
-                        <tr><td>LIGHT_EXPOSURE:</td><td>24H</td></tr>
-                    </table>
-                </section>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3>[ data_points ]</h3>
+        <button id="open-modal" class="plus-btn">[ + ]</button>
+    </div>
+    <table>
+        <tr><td>height:</td><td>5-8cm</td></tr>
+        <tr><td>leaf_count:</td><td>~1</td></tr>
+        <tr><td>water_given:</td><td>20-30ml</td></tr>
+        <tr><td>light_exposure:</td><td>24h</td></tr>
+    </table>
+</section>
 
                 <section class="journal-box">
                     <h3>[ FIELD_JOURNAL ]</h3>
@@ -82,6 +85,25 @@
             </footer>
         </div>
     </div>
+    <div id="data-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times; [close]</span>
+        <h2>// expanded_system_logs</h2>
+        <hr>
+        <br>
+        <p><strong>growth_analysis:</strong> 
+            <br>
+            this week we saw the first visible signs of growth. our plant sprouted the start of a leaf which will allow the plant to start photosynthesis to create its own energy.</p>
+        <div class="custom-line"></div>
+        <p><strong>abiotic_factors:</strong> 
+            <br>
+            24h lighting to ensure efficiant photosynthesis. plant is placed in dry, room-temprature room. 2 styrofoam cups used with nutrient rich soil.</p>
+        <div class="custom-line"></div>
+        <p><strong>maintenance_protocol:</strong> 
+            <br>
+            water daily with 20-30ml of water depending on soil moisture level.</p>
+    </div>
+</div>
     <div id="audio-toggle" class="audio-control">
     SYSTEM_AUDIO: [<span id="status">OFF</span>]
     </div>
